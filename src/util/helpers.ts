@@ -132,7 +132,11 @@ export function deepEqual (a: any, b: any): boolean {
 
   if (a instanceof Date && b instanceof Date) {
     // If the values are Date, they were convert to timestamp with getTime and compare it
+<<<<<<< HEAD
     if (a.getTime() !== b.getTime()) return false
+=======
+    if (a.getTime() != b.getTime()) return false
+>>>>>>> Add Date comparison in deepEqual function
   }
 
   if (a !== Object(a) || b !== Object(b)) {
